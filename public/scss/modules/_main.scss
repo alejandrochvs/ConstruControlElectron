@@ -1,0 +1,103 @@
+.topNav {
+    height: 10vh;
+    overflow: hidden;
+    z-index: 5;
+    background: white;
+    padding: 0;
+    border-bottom: solid 1px lightgray;
+    transition: all .3s ease;
+    .topNavPill {
+        height: 100%;
+        line-height: 10vh;
+        border-right: solid 1px whitesmoke;
+        background: white;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        cursor: pointer;
+        transition: all 0.3s ease;
+        &.active {
+            background: darken(whitesmoke, 5%);
+        }
+        &:hover {
+            background: darken(whitesmoke, 10%);
+        }
+    }
+    &.drop{
+        height: auto;
+    }
+}
+
+.sideNav {
+    padding: 0;
+    height: 100vh;
+    position: fixed;
+    margin-top: 0vh;
+    z-index: 5;
+    background: whitesmoke;
+    .sideNavTitle {
+        font-size: 18px;
+        padding: 2px 0;
+    }
+    .sideNavPill {
+        padding: 2% 3%;
+        height: 5%;
+        border: solid 1px lightgray;
+        background: whitesmoke;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        cursor: pointer;
+        transition: all 0.3s ease;
+        &.active {
+            background: darken(whitesmoke, 5%);
+        }
+        &:hover {
+            background: darken(whitesmoke, 10%);
+        }
+    }
+}
+
+.content {
+    height: auto;
+    margin-top: 0vh;
+    margin-top: 0vh;
+    padding: 0;
+    z-index: 0;
+    .contentHead {
+        padding: 0;
+        background: whitesmoke;
+        font-size: 18px;
+        padding: 2px 0;
+        font-weight: 100;
+        border-left: solid 1px lightgray;
+        .contentInfo {
+            border-right: solid 1px lightgray;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+        }
+    }
+    .contentCont {
+        height: 50px;
+        padding: 0;
+        border-bottom: solid 1px whitesmoke;
+        .contentInfo {
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+            border-left: solid 1px whitesmoke;
+            height: 100%;
+            line-height: 50px;
+            &:nth-child(5) {
+                padding: 0;
+            }
+            input {
+                height: 50%;
+                top: 25%;
+                padding: 0;
+                text-align: center;
+            }
+        }
+    }
+}
