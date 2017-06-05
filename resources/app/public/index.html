@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>ConstruControl</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/main.css"> </head>
+
+<body>
+    <h1 class="col-xs-12 text-center">ConstruControl</h1>
+    <div class="col-xs-12 col-md-8 col-md-offset-2 options">
+        <div class="col-xs-12 col-sm-6 col-md-4 option open">
+            <div class="col-xs-12 background">
+                <div class="col-xs-12 logo">
+                    <div class="glyphicon glyphicon-folder-open"></div>
+                </div>
+                <div class="col-xs-12 title">Abrir</div>
+            </div>
+        </div>
+        <div class="col-xs-12 col-sm-6 col-md-4 option new">
+            <div class="col-xs-12 background">
+                <div class="col-xs-12 logo">
+                    <div class="glyphicon glyphicon-folder-close"></div>
+                </div>
+                <div class="col-xs-12 title">Nuevo</div>
+            </div>
+        </div>
+        <div class="col-xs-12 col-sm-6 col-md-4 option info">
+            <div class="col-xs-12 background">
+                <div class="col-xs-12 logo">
+                    <div class="glyphicon glyphicon-info-sign"></div>
+                </div>
+                <div class="col-xs-12 title">Acerca de... </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-xs-12 btn test">Test</div>
+</body>
+<script>
+    if (typeof module === 'object') {
+        window.module = module;
+        module = undefined;
+    }
+</script>
+<script src="js/jquery.js"></script>
+<script src="js/bootstrap.js"></script>
+<script src="js/main.js"></script>
+<script>
+    // You can also require other files to run in this process
+    require('./js/renderer.js')
+</script>
+
+</html>
